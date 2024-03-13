@@ -2,6 +2,7 @@
 
 This script is a simple utility for controlling a network-enabled Patlite signal tower. It allows you to turn on or off the red, green, and yellow lights, and set the operational hours during which the lights can be active.
 
+We tested this script using the NHP-3FB1 model. It's uncertain whether it will work with other models.
 
 ## Usage
 ```
