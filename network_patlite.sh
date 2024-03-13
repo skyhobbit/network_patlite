@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# sample
-# ./network_patlite.sh -i 192.168.1.2 -r 1 -g 1 -y 0 -s 7 -e 21
-
 usage() {
   echo "Usage: $CMDNAME -i IPADDRESS [-r VALUE] [-g VALUE] [-y VALUE] [-s STARTHOUR] [-e ENDHOUR]" 1>&2
   echo "Example: $CMDNAME -i 192.168.1.2 -r 1 -g 1 -y 0 -s 7 -e 21" 1>&2
