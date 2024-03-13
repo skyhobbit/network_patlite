@@ -16,15 +16,21 @@ validate_params() {
 
 # Parse input options
 parse_options() {
+  value_r=1
+  value_g=1
+  value_y=1
+  start_hour=0
+  end_hour=24
+
   while getopts i:r:g:y:s:e: OPT
   do
     case $OPT in
       "i" ) ip="$OPTARG" ;;
-      "r" ) value_r="${OPTARG:-0}" ;;
-      "g" ) value_g="${OPTARG:-0}" ;;
-      "y" ) value_y="${OPTARG:-0}" ;;
-      "s" ) start_hour="${OPTARG:-0}" ;;
-      "e" ) end_hour="${OPTARG:-24}" ;;
+      "r" ) value_r="${OPTARG}" ;;
+      "g" ) value_g="${OPTARG}" ;;
+      "y" ) value_y="${OPTARG}" ;;
+      "s" ) start_hour="${OPTARG}" ;;
+      "e" ) end_hour="${OPTARG}" ;;
         * ) usage ;;
     esac
   done

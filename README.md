@@ -10,9 +10,9 @@ This script is a simple utility for controlling a network-enabled Patlite signal
 
 ## Parameters:
 - -i IPADDRESS: Required. The IP address of the Patlite signal tower.
-- -r VALUE: Optional. The value for the red light (0: off, 1: on). Default is 0.
-- -g VALUE: Optional. The value for the green light (0: off, 1: on). Default is 0.
-- -y VALUE: Optional. The value for the yellow light (0: off, 1: on). Default is 0.
+- -r VALUE: Optional. The value for the red light (0: off, 1: on). Default is 1.
+- -g VALUE: Optional. The value for the green light (0: off, 1: on). Default is 1.
+- -y VALUE: Optional. The value for the yellow light (0: off, 1: on). Default is 1.
 - -s STARTHOUR: Optional. The start hour (in 24-hour format) for the operational period. Default is 0.
 - -e ENDHOUR: Optional. The end hour (in 24-hour format) for the operational period. Default is 24.
 
