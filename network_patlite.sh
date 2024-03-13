@@ -2,20 +2,14 @@
 
 usage() {
   echo "Usage: $CMDNAME -i IPADDRESS [-r VALUE] [-g VALUE] [-y VALUE] [-s STARTHOUR] [-e ENDHOUR]" 1>&2
-  echo "Example: $CMDNAME -i 192.168.1.2 -r 1 -g 1 -y 0 -s 7 -e 21" 1>&2
+  echo "Example: $CMDNAME -i 192.168.10.1 -r 1 -g 1 -y 0 -s 7 -e 21" 1>&2
   echo "r,g,y values mean 0:off, 1:on" 1>&2
   exit 1
 }
 
-validate_params() {
-  if [ -z "$ip" ]; then
-    echo "IP address is required." 1>&2
-    usage
-  fi
-}
-
 # Parse input options
 parse_options() {
+  ip="192.168.10.1"
   value_r=1
   value_g=1
   value_y=1
@@ -51,5 +45,4 @@ main() {
 }
 
 parse_options "$@"
-validate_params
 main
