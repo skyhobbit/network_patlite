@@ -31,3 +31,6 @@ The Patlite signal tower must be connected to the network and reachable at the s
 ## License
 
 This script is provided under the GNU General Public License (GPL).
+
+## Serial Patlite
+If you want to use Serial Patlite, https://github.com/skyhobbit/serial_patlite/ for more information.
